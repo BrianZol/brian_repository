@@ -1,0 +1,44 @@
+	<!--style="background: #F50004"-->
+		<div class="row">
+			<div class="col-9" style="background: #E81216">
+			row 1 column 1
+			</div>
+			<div class="col-3" style="background: #CE14E6">
+			row 1 column 3
+			</div>
+		</div>
+	
+	
+		<!-- SECOND ROW --> 	
+		<div class="row">
+			<div class="col-3" style="background: #EE8F0D">
+			row 2 column 1
+			</div>
+			<div class="col-3" style="background: #2AF3DB">
+			row 2 column 2
+			</div>
+			<div class="col-3" style="background: #30E757 ">
+			row 2 column 3
+			</div>
+			<div class="col-3" style="background: #DC2EAF">
+			row 2 column 4
+			</div>
+		</div>
+		
+		
+		<!-- THIRD ROW --> 	
+		<div class="row">
+			<div class="col-3" style="background: #FAE512">
+			row 3 column 1
+			</div>
+			<div class="col-3" style="background: #FF5E00">
+			row 3 column 2
+			</div>
+			<div class="col-3" style="background:#7400FB">
+			row 3 column 3
+			</div>
+			<div class="col-3" style="background: #0C40FF">
+			row 3 column 4
+			</div>
+		</div>
+	
