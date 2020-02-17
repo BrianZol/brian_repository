@@ -1,7 +1,0 @@
-@charset "UTF-8";
-/* CSS Document */
-
-.container{
-  padding-left: ($spacer * .5) !important;
-  padding-right: ($spacer * .5) !important;
-}
