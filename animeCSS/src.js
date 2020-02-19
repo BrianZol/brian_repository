@@ -16,7 +16,7 @@ anime({
     translateX: 390
 });
 ////////////////////////////////////////////////////////////////////////////////////////////
-// HOW TO ANIMATE ELEMENTS INDEPENDEDNTLY... PREFERED METHOD				// BY ELEMENT ID
+// HOW TO ANIMATE ELEMENTS INDEPENDEDNTLY... PREFFERED METHOD				// BY ELEMENT ID
 												
 let anyName = document.getElementById("id_1")
 anime({
