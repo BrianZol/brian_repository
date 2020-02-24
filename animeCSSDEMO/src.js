@@ -18,7 +18,7 @@ anime({
 ////////////////////////////////////////////////////////////////////////////////////////////
 // HOW TO ANIMATE ELEMENTS INDEPENDEDNTLY... PREFFERED METHOD				// BY ELEMENT ID
 												
-let anyName = document.getElementById("id_1")
+let anyName = document.getElementById("firstimage")
 anime({
     targets: anyName,
     translateX: 290,
