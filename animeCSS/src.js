@@ -24,6 +24,7 @@ anime({
     translateX: 290,
     easing: 'easeInOutQuad'
 });
+
 ////////////////////////////////////////////////////////////////////////////////////////////
 																			// BY ELEMWNT TAG
 let drawings = document.querySelectorAll("svg")
