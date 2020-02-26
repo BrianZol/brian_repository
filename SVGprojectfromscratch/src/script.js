@@ -1,3 +1,9 @@
+                                        //mypath comes from html//
+                                         //firstpath to edit is just//
+                                        //a random name I pick, it//
+                                        //must match the var name//
+
+
 let myPaths= document.querySelectorAll('path')
 console.log(myPaths)
 
@@ -27,6 +33,15 @@ function setup(){
 }
 
 
-
-
-
+function mousePressed(){
+    
+    anime({
+        targets: document.querySelectorAll("image"),
+        translateY: 100,
+        scale: .30
+        
+        
+    })
+}
+          
+          
