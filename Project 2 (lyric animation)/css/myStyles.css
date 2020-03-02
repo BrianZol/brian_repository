@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+    color: brown
+}
+
+
+
+
+.box{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin: 4px;
+	display: inline-block;
+}
+
+.red{
+	background-color: red;
+}
+.blue{
+	background-color: blue;
+}
+.green{
+	background-color: green;
+}
+.yellow{
+	background-color: yellow;
+}
+
+
+.firstimage{
+  padding-top: 200px 
+    
+    
+}
