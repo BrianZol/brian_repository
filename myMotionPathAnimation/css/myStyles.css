@@ -1,35 +1,35 @@
-.container {
-    position: relative;
-    color: brown
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: poppins;
+	
 }
 
-
-
-
-.box{
-	position: relative;
+body{
+	display: flex;
 	width: 100px;
 	height: 100px;
-	margin: 4px;
-	display: inline-block;
+	justify-content: center;
+	align-content: center;
+	background-color: black;
 }
 
-.red{
-	background-color: red;
-}
-.blue{
-	background-color: blue;
-}
-.green{
-	background-color: green;
-}
-.yellow{
-	background-color: yellow;
+.content{
+	width: 380px;
+	height: 80px;
+	position: relative;
+	overflow: hidden;	
 }
 
-
-.firstimage{
-  padding-top: 200px 
-    
-    
+.cover{
+	position: absolute;
+	width: 100%;
+	left:0%;
+	height: 100%;
+	background: linear-gradient(to right),
+		#FB0004,#FF6C0B;
+	transform: translate(-50%,-50%);
+	padding: 0px,10px;
+	color: white;
 }

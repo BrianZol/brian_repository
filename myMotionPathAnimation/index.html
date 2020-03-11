@@ -1,109 +1,28 @@
+<!doctype html>
 <html>
-    <head>
-    <script src="libraries/anime.min.js"></script>
-    <script src="libraries/p5.min.js"></script>
-    </head>
-        <body>
-    
-    <h4>Links</h4>
-    <a href="https://css-tricks.com/svg-line-animation-works/">Nice article on SVG animation. See the links </a>
-    
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/myStyles.css" </script>
+<script src="libraries/anime.min.js"></script>
+<script src="libraries/p5.min.js"></script>
+<title>Text Reveal</title>
+</head>
+	<body>
+		<div class="content">
+			<div class="cover">
+			</div>
+				<div class="text">
+				<h2>Title Text</h2>
+				<p>Hey there! Welcome to my channel</p>
+				</div>
+			</div>
+  
     
                 
                 
     
-<!-------------------------------------------------------------------------------SVG-->
-    <?xml version="1.0" encoding="utf-8"?>
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    viewBox="0 0 500 300" style="enable-background:new 0 0 500 300;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
-</style>
-<path class="st0" d="M29.96,243.25c14.66,0.61,27.86-10.21,34.55-23.27c6.69-13.06,8.18-28.07,9.55-42.67
-	c1.02-10.8,2.03-21.6,3.05-32.4c1.64-17.37,3.5-35.46,12.75-50.25s28.29-25.04,44.47-18.53c13.6,5.47,20.76,20.45,24.08,34.73
-	c3.32,14.27,4.19,29.4,10.89,42.44c6.86,13.34,19.79,23.41,34.41,26.78c14.62,3.37,30.65,0,42.67-8.99
-	c1.33-5.26-5.2-9.76-10.51-8.68c-5.31,1.09-9.19,5.53-12.57,9.78c-1.64,2.06-3.32,4.25-3.72,6.85c-0.99,6.48,6.03,11.13,12.18,13.4
-	c9.76,3.6,20.76,5.78,30.45,1.98c11.63-4.56,18.42-16.37,24.88-27.06c6.46-10.69,14.81-21.98,27.12-24.11
-	c9.63-1.67,19.25,2.83,27.36,8.28c28.81,19.36,46.63,50.78,66.97,78.9c4.82,6.66,10.18,13.46,17.78,16.59
-	c5.3,2.18,11.18,2.34,16.91,2.47c11.72,0.26,23.44,0.53,35.16,0.79"/>
-    </svg>
-  <!--SVG-->  <!--SVG-->  <!--SVG-->  <!--SVG-->  <!--SVG-->  <!--SVG-->  <!--SVG-->
-
-<!-------------------------------------------------------------------------------SVG-->	
-
-            
-<!---------------------------------------------------------------------------MOTION PATH-->	          
-<!-- SVG -->
-<article id="svg" class="color-svg">
-<header>
-  <h2 class="demos-title">SVG</h2>
-</header>
-
-<div id="motionPath" class="demo">
-  <h3 class="demo-title">Motion path</h3>
-  <div class="demo-description">
-    <p>
-      Animates an element relative to the <code>x</code>, <code>y</code> and <code>angle</code> values of an SVG path element.
-    </p>
-    <pre><code>var myPath = anime.path('svg path');</code></pre>
-    <p>
-      The path function returns a new Function that returns the specified property.
-    </p>
-    <p class="bubble info">
-      Motion path animations are responsive since v3
-    </p>
-    <table>
-      <thead>
-        <td>Parameters</td>
-        <td>Example</td>
-        <td>Info</td>
-      </thead>
-      <tr>
-        <td><code>'x'</code></td>
-        <td><code>myPath('x')</code></td>
-        <td>Return the current x value in <code>'px'</code> of the SVG path</td>
-      </tr>
-      <tr>
-        <td><code>'y'</code></td>
-        <td><code>myPath('y')</code></td>
-        <td>Return the current y value in <code>'px'</code> of the SVG path</td>
-      </tr>
-      <tr>
-        <td><code>'angle'</code></td>
-        <td><code>myPath('angle')</code></td>
-        <td>Return the current angle value in <code>'degrees'</code> of the SVG path</td>
-      </tr>
-    </table>
-  </div>
-  <div class="demo-content motion-path-demo">
-    <div class="motion-path">
-      <div class="small square shadow follow-path"></div>
-      <div class="small square el follow-path"></div>
-      <svg width="256" height="112" viewBox="0 0 256 112">
-        <path fill="none" stroke="currentColor" stroke-width="1" d="M8,56 C8,33.90861 25.90861,16 48,16 C70.09139,16 88,33.90861 88,56 C88,78.09139 105.90861,92 128,92 C150.09139,92 160,72 160,56 C160,40 148,24 128,24 C108,24 96,40 96,56 C96,72 105.90861,92 128,92 C154,93 168,78 168,56 C168,33.90861 185.90861,16 208,16 C230.09139,16 248,33.90861 248,56 C248,78.09139 230.09139,96 208,96 L48,96 C25.90861,96 8,78.09139 8,56 Z"/>
-      </svg>
-    </div>
-  </div>
-  <script>var motionPath = function() {
-/*DEMO*/
-var path = anime.path('.motion-path-demo path');
-
-anime({
-  targets: '.motion-path-demo .el',
-  translateX: path('x'),
-  translateY: path('y'),
-  rotate: path('angle'),
-  easing: 'linear',
-  duration: 2000,
-  loop: true
-});
-/*DEMO*/
-}
-  </script>
-
-</div>
-    
-<!---------------------------------------------------------------------------MOTION PATH-->	   
+<!-------------------------------------------------------------------------SVG-->
+ 
 
 
             
@@ -115,10 +34,10 @@ anime({
             
             
             
-<!-------------------------------------------------------------------------------JAVA-->
+<!------------------------------------------------------------------------JAVA-->
     <!-- <script src="src/script.js"></script> -->
     <script src="src/script copy.js"></script>
-<!-------------------------------------------------------------------------------JAVA-->
+<!------------------------------------------------------------------------JAVA-->
                 
-        </body>
+	</body>
 </html>
