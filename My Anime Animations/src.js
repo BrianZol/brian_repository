@@ -16,19 +16,46 @@ anime({
 	rotate: '1turn',
 })
 
+anime({
+	targets: 'div.box.yellow',
+	translateY: [
+		{value:200, duration:3000},
+		{value:0, duration:3000},
+	],	
+	rotate: '1turn',
+})
 
-let anyName = document.getElementById("circle")
+anime({
+	targets: 'div.box.green',
+	translateY: [
+		{value:200, duration:3000},
+		{value:0, duration:3000},
+	],	
+	rotate: '1turn',
+})
+
+
+anime({
+	targets: 'firstimage',
+	translateY: [
+		{value:200, duration:3000},
+		{value:0, duration:3000},
+	],	
+	rotate: '1turn',
+})
+
+
+var anyName = document.getElementById("circle")
 anime({
     targets: anyName,
-    translateX: 290,
+    translateX: 330,
     easing: 'easeInOutQuad'
 });
 
-let anyName2 = document.getElementById("firstimage")
+var anyName2 = document.getElementById("firstimage")
 anime({
     targets: anyName2,
     translateX: 290,
-    translateY: 300,
+    translateY: 150,
     easing: 'easeInOutQuad'
 });
-
